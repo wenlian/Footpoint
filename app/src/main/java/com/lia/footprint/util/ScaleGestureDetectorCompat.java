@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.lia.animation.util;
+package com.lia.footprint.util;
 
 import android.annotation.TargetApi;
 import android.os.Build;

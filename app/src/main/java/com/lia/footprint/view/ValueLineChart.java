@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.view;
+package com.lia.footprint.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -36,16 +36,16 @@ import android.widget.Scroller;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.ValueAnimator;
 
-import com.lia.animation.R;
-import com.lia.animation.communication.IOnPointFocusedListener;
-import com.lia.animation.model.BaseModel;
-import com.lia.animation.model.LegendModel;
-import com.lia.animation.model.Point2D;
-import com.lia.animation.model.StandardValue;
-import com.lia.animation.model.ValueLinePoint;
-import com.lia.animation.model.ValueLineSeries;
-import com.lia.animation.util.ScaleGestureDetectorCompat;
-import com.lia.animation.util.ViewUtils;
+import com.lia.footprint.R;
+import com.lia.footprint.communication.IOnPointFocusedListener;
+import com.lia.footprint.model.BaseModel;
+import com.lia.footprint.model.LegendModel;
+import com.lia.footprint.model.Point2D;
+import com.lia.footprint.model.StandardValue;
+import com.lia.footprint.model.ValueLinePoint;
+import com.lia.footprint.model.ValueLineSeries;
+import com.lia.footprint.util.ScaleGestureDetectorCompat;
+import com.lia.footprint.util.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;

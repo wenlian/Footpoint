@@ -1,4 +1,4 @@
-package com.lia.animation.view;
+package com.lia.footprint.view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,9 +10,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import com.lia.animation.R;
-import com.lia.animation.model.Dot;
-import com.lia.animation.model.DotInfo;
+import com.lia.footprint.R;
+import com.lia.footprint.model.Dot;
+import com.lia.footprint.model.DotInfo;
 
 
 public class Foot extends View {

@@ -1,4 +1,4 @@
-package com.lia.animation.model;
+package com.lia.footprint.model;
 
 public class DotInfo {
 

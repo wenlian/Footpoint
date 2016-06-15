@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.communication;
+package com.lia.footprint.communication;
 
 /**
  * Item change listener for PieChart

@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.util;
+package com.lia.footprint.util;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
@@ -25,8 +25,8 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.view.View;
 
-import com.lia.animation.model.BaseModel;
-import com.lia.animation.model.Point2D;
+import com.lia.footprint.model.BaseModel;
+import com.lia.footprint.model.Point2D;
 
 import java.util.List;
 

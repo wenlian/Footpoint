@@ -15,16 +15,16 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.communication;
+package com.lia.footprint.model;
 
 /**
- * Point focus change listener for ValueLineChart
+ * A wrapper class for legend labels if only labels are needed and no further information.
  */
-public interface IOnPointFocusedListener {
+public class LegendModel extends BaseModel {
 
-    /**
-     * Called when a new point in the ValueLineChart was selected
-     * @param _PointPos List position of the selected point.
-     */
-    void onPointFocused(int _PointPos);
+    public LegendModel(String _legendLabel) {
+        super(_legendLabel);
+    }
+
+
 }

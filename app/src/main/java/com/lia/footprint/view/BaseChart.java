@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.view;
+package com.lia.footprint.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,14 +30,14 @@ import android.view.ViewGroup;
 
 import com.nineoldandroids.animation.ValueAnimator;
 
-import com.lia.animation.model.BaseModel;
-import com.lia.animation.util.ViewUtils;
+import com.lia.footprint.model.BaseModel;
+import com.lia.footprint.util.ViewUtils;
 
 import java.text.NumberFormat;
 import java.util.List;
 import java.util.Locale;
 
-import com.lia.animation.R;
+import com.lia.footprint.R;
 
 /**
  * This is the main chart class and should be inherited by every graph. This class provides some general

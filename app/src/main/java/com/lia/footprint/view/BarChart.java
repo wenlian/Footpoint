@@ -15,7 +15,7 @@
 *   limitations under the License.
 */
 
-package com.lia.animation.view;
+package com.lia.footprint.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,13 +25,13 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import com.lia.animation.model.BarModel;
-import com.lia.animation.model.BaseModel;
-import com.lia.animation.util.ViewUtils;
+import com.lia.footprint.model.BarModel;
+import com.lia.footprint.model.BaseModel;
+import com.lia.footprint.util.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.lia.animation.R;
+import com.lia.footprint.R;
 /**
  * A simple Bar Chart where the bar heights are dependent on each other.
  */

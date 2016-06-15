@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.model;
+package com.lia.footprint.model;
 
 /**
  * Model for the {@link org.eazegraph.lib.models.ValueLineSeries}.
