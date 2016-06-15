@@ -1,4 +1,4 @@
-package com.caredear.animation.model;
+package com.lia.animation.model;
 
 public class Dot {
 

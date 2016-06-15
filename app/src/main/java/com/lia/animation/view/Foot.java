@@ -1,4 +1,4 @@
-package com.caredear.animation.view;
+package com.lia.animation.view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,9 +10,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import com.caredear.animation.R;
-import com.caredear.animation.model.Dot;
-import com.caredear.animation.model.DotInfo;
+import com.lia.animation.R;
+import com.lia.animation.model.Dot;
+import com.lia.animation.model.DotInfo;
 
 
 public class Foot extends View {

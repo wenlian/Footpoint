@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.caredear.animation"
+        applicationId "com.lia.animation"
         minSdkVersion 12
         targetSdkVersion 19
     }
