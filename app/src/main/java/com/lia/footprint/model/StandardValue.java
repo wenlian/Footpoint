@@ -15,9 +15,9 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.model;
+package com.lia.footprint.model;
 
-import com.lia.animation.util.ViewUtils;
+import com.lia.footprint.util.ViewUtils;
 
 /**
  * Created by paul on 13.08.14.

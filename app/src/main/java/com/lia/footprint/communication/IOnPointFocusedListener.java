@@ -15,41 +15,16 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.model;
+package com.lia.footprint.communication;
 
 /**
- * A simple wrapper class for the representation of coordinates.
+ * Point focus change listener for ValueLineChart
  */
-public class Point2D {
+public interface IOnPointFocusedListener {
 
-    public Point2D(float _x, float _y) {
-        mX = _x;
-        mY = _y;
-    }
-
-    public Point2D() {
-    }
-
-    public float getX() {
-        return mX;
-    }
-
-    public void setX(float _x) {
-        mX = _x;
-    }
-
-    public float getY() {
-        return mY;
-    }
-
-    public void setY(float _y) {
-        mY = _y;
-    }
-
-    public float[] getFloatArray() {
-        return new float[]{mX, mY};
-    }
-
-    private float mX;
-    private float mY;
+    /**
+     * Called when a new point in the ValueLineChart was selected
+     * @param _PointPos List position of the selected point.
+     */
+    void onPointFocused(int _PointPos);
 }

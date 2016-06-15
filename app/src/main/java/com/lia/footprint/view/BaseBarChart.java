@@ -15,7 +15,7 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.view;
+package com.lia.footprint.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -33,12 +33,12 @@ import android.widget.Scroller;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.ValueAnimator;
 
-import com.lia.animation.communication.IOnBarClickedListener;
-import com.lia.animation.model.BaseModel;
-import com.lia.animation.util.ViewUtils;
+import com.lia.footprint.communication.IOnBarClickedListener;
+import com.lia.footprint.model.BaseModel;
+import com.lia.footprint.util.ViewUtils;
 
 import java.util.List;
-import com.lia.animation.R;
+import com.lia.footprint.R;
 /**
  * The abstract class for every type of bar chart, which handles the general calculation for the bars.
  */

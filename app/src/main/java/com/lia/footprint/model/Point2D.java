@@ -15,11 +15,41 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.communication;
+package com.lia.footprint.model;
 
 /**
- * Created by paul on 28.07.14.
+ * A simple wrapper class for the representation of coordinates.
  */
-public interface IOnBarClickedListener {
-    void onBarClicked(int _Position);
+public class Point2D {
+
+    public Point2D(float _x, float _y) {
+        mX = _x;
+        mY = _y;
+    }
+
+    public Point2D() {
+    }
+
+    public float getX() {
+        return mX;
+    }
+
+    public void setX(float _x) {
+        mX = _x;
+    }
+
+    public float getY() {
+        return mY;
+    }
+
+    public void setY(float _y) {
+        mY = _y;
+    }
+
+    public float[] getFloatArray() {
+        return new float[]{mX, mY};
+    }
+
+    private float mX;
+    private float mY;
 }

@@ -15,16 +15,11 @@
  *   limitations under the License.
  */
 
-package com.lia.animation.model;
+package com.lia.footprint.communication;
 
 /**
- * A wrapper class for legend labels if only labels are needed and no further information.
+ * Created by paul on 28.07.14.
  */
-public class LegendModel extends BaseModel {
-
-    public LegendModel(String _legendLabel) {
-        super(_legendLabel);
-    }
-
-
+public interface IOnBarClickedListener {
+    void onBarClicked(int _Position);
 }

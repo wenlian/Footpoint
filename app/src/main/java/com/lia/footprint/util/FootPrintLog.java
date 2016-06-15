@@ -1,8 +1,8 @@
-package com.lia.animation.util;
+package com.lia.footprint.util;
 
 import android.util.Log;
 
-public class PedoLog {
+public class FootPrintLog {
     public static final boolean DEBUG = true;
     public static void v(String tag, String msg) {
         Log.v(tag, msg);
