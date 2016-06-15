@@ -9,35 +9,14 @@
     tools:context="com.lia.animation.MainActivity$PlaceholderFragment"
     android:orientation="vertical" >
 
-    <!--
-    <TextView android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26sp"
-        android:text="@string/hello_world" />
-    
-    <Button android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:text="@string/hello_world"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-         <Button android:id="@+id/ball2"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="@string/ball"/>
-        <Button android:id="@+id/ball"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="@string/ball"/>
-        
-    </LinearLayout>
-      -->
-
     <com.lia.animation.view.Foot
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@string/BkColor"/>
+    <com.lia.animation.view.ValueLineChart
+        android:id="@+id/linechart"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
 </LinearLayout>

@@ -4,6 +4,7 @@
     <string name="app_name">FootPoint</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="BkColor">#FFF</string>
 
 
     <string name="ball">Ball</string>
