@@ -13,31 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+
         <com.lia.footprint.view.Foot
             android:id="@+id/foot"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:background="@color/foot_bg"/>
-        <com.lia.footprint.view.ValueLineChart
-            android:id="@+id/valueLineChart"
-            android:layout_width="0dp"
-            android:layout_weight="4"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            app:egLegendHeight="34dp"
-            app:egLegendColor="@android:color/white"
-            app:egLineStroke="2dp"
-            app:egShowCell="true"
-            app:egVerticalCellNum="6"
-            app:egCellLineColor="#5fffffff"
-            app:egLegendTextSize="24sp"
-            app:egUseCubic="true"
-            app:egUseOverlapFill="false"
-            app:egCurveSmoothness="0.4"
-            app:egShowValueIndicator="false"
-            app:egUseDynamicScaling="false"
-            />
+            android:layout_height="305dp"
+            android:layout_weight="0.72"/>
     </LinearLayout>
 
     <!-- panel to show menu-->
@@ -47,5 +29,24 @@
         android:orientation="horizontal">
 
     </LinearLayout>
+
+    <com.lia.footprint.view.ValueLineChart
+        android:id="@+id/valueLineChart"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
+        android:layout_marginLeft="10dp"
+        app:egLegendHeight="34dp"
+        app:egLegendColor="@android:color/white"
+        app:egLineStroke="2dp"
+        app:egShowCell="true"
+        app:egVerticalCellNum="6"
+        app:egCellLineColor="#5fffffff"
+        app:egLegendTextSize="24sp"
+        app:egUseCubic="true"
+        app:egUseOverlapFill="false"
+        app:egCurveSmoothness="0.4"
+        app:egShowValueIndicator="false"
+        app:egUseDynamicScaling="false"
+        />
 
 </LinearLayout>
