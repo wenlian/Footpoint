@@ -19,7 +19,14 @@
             android:id="@+id/foot"
             android:layout_width="0dp"
             android:layout_height="305dp"
-            android:layout_weight="0.72"/>
+            android:layout_weight="0.72"
+            android:background="@drawable/foot_l"/>
+        <com.lia.footprint.view.Foot
+            android:id="@+id/foot1"
+            android:layout_width="0dp"
+            android:layout_height="305dp"
+            android:layout_weight="0.72"
+            android:background="@drawable/foot_bg"/>
     </LinearLayout>
 
     <!-- panel to show menu-->
