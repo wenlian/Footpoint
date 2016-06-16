@@ -35,7 +35,8 @@ public class Foot extends View {
     DotInfo dotInfo1 = new DotInfo(DOT1, 50);
     DotInfo dotInfo2 = new DotInfo(DOT3, 100);
     DotInfo dotInfo3 = new DotInfo(DOT5, 80);
-    DotInfo[] dotsInfo = {dotInfo1,dotInfo2,dotInfo3};
+    DotInfo dotInfo4 = new DotInfo(DOT2, 60);
+    DotInfo[] dotsInfo = {dotInfo1,dotInfo2,dotInfo3,dotInfo4};
     Paint mDotPaint = null;
 
     private PaintFlagsDrawFilter mPfd;

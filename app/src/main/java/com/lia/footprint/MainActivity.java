@@ -23,6 +23,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
     ValueLineChart mStatics = null;
     Foot mFootView;
+    Foot lFootView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +70,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
     private void initResources() {
         mFootView = (Foot) findViewById(R.id.foot);
+        lFootView = (Foot) findViewById(R.id.foot1);
         mStatics = (ValueLineChart) findViewById(R.id.valueLineChart);
         updateValueLineChart();
     }
