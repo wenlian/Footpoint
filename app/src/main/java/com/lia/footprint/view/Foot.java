@@ -52,7 +52,7 @@ public class Foot extends View {
                        int defStyle) {
         super(context, attrs, defStyle);
         mContext = context;
-        //mFootBg = context.getResources().getDrawable(R.drawable.foot_bg);
+        mFootBg = context.getResources().getDrawable(R.drawable.foot_bg);
 
         mFootBgWidth = mFootBg.getIntrinsicWidth();
         mFootBgHeight = mFootBg.getIntrinsicHeight();
