@@ -18,6 +18,7 @@ import com.lia.footprint.model.DotInfo;
 public class Foot extends View {
 
     private final String TAG = "FootView";
+    private DotInfo [] dotsInfo = {};
 
     Drawable mFootBg = null;
     int mFootBgWidth = 0;
@@ -27,7 +28,7 @@ public class Foot extends View {
     private boolean mChanged;
     protected final Context mContext;
 
-    public static final Dot DOT1= new Dot(0.1f,0.1f);
+    /*public static final Dot DOT1= new Dot(0.1f,0.1f);
     public static final Dot DOT2= new Dot(0.8f,0.7f);
     public static final Dot DOT3= new Dot(0.5f,0.5f);
     public static final Dot DOT4= new Dot(0.3f,0.2f);
@@ -36,13 +37,14 @@ public class Foot extends View {
     DotInfo dotInfo2 = new DotInfo(DOT3, 100);
     DotInfo dotInfo3 = new DotInfo(DOT5, 80);
     DotInfo dotInfo4 = new DotInfo(DOT2, 60);
-    DotInfo[] dotsInfo = {dotInfo1,dotInfo2,dotInfo3,dotInfo4};
+    DotInfo[] dotsInfo = {dotInfo1,dotInfo2,dotInfo3,dotInfo4};*/
     Paint mDotPaint = null;
 
     private PaintFlagsDrawFilter mPfd;
 
     public Foot(Context context) {
         this(context, null);
+        //dotsInfo = context.
     }
 
     public Foot(Context context, AttributeSet attrs) {
