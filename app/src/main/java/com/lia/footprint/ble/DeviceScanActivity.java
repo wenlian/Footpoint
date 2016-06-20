@@ -32,9 +32,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import java.util.List;
 
+import com.lia.footprint.MainActivity;
 import com.lia.footprint.R;
 
 import com.lia.footprint.ble.BluetoothClass.OnDataAvailableListener;
@@ -95,6 +97,11 @@ public class DeviceScanActivity extends ListActivity {
         mBLE.setOnServiceDiscoverListener(mOnServiceDiscover);
         //收到BLE终端数据交互的事件
         mBLE.setOnDataAvailableListener(mOnDataAvailable);
+
+        Intent it= new Intent();//创建一个新的intent对象
+        it.setClass(DeviceScanActivity.this, MainActivity.class);
+        //设置Intent的源地址和目标地址
+        startActivity(it);
     }
 
 

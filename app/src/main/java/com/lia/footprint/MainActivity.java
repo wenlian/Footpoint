@@ -84,7 +84,39 @@ public class MainActivity extends Activity implements OnClickListener{
             }
             series.addPoint(point);
         }
+
+
+        SparseIntArray data1 = new SparseIntArray();
+        data1.append(0,10);
+        data1.append(1,100);
+        data1.append(2,11);
+        data1.append(3,90);
+        data1.append(4,12);
+        data1.append(5,100);
+        data1.append(6,10);
+        data1.append(7,90);
+        data1.append(8,20);
+        data1.append(9,95);
+        data1.append(10,10);
+        data1.append(11,90);
+
+        ValueLineSeries series1 = new ValueLineSeries();
+        series1.setColor(mContext.getResources().getColor(android.R.color.holo_red_light));
+        for (int i = 0; i < data1.size(); i++) {
+            Integer valueInteger1 = data1.get(i);
+            int value1 = 0;
+            if (null != valueInteger1) {
+                value1 = valueInteger1.intValue();
+            }
+            ValueLinePoint point1 = new ValueLinePoint(i + "", value1);
+            if (i % 4 != 0) {
+                point1.setIgnore(true);
+            }
+            series1.addPoint(point1);
+        }
+
         mStatics.addSeries(series);
+        mStatics.addSeries(series1);
         mStatics.startAnimation();
     }
 

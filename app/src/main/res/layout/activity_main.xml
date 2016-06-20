@@ -40,7 +40,8 @@
     <com.lia.footprint.view.ValueLineChart
         android:id="@+id/valueLineChart"
         android:layout_width="wrap_content"
-        android:layout_height="169dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         app:egLegendHeight="34dp"
         app:egLegendColor="@android:color/white"
