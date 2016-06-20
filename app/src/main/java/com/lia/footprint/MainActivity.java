@@ -1,4 +1,3 @@
-
 package com.lia.footprint;
 
 import android.app.Activity;
@@ -25,18 +24,22 @@ public class MainActivity extends Activity implements OnClickListener{
     Context mContext;
 
     ValueLineChart mStatics = null;
-    public static final Dot DOT1= new Dot(0.1f,0.1f);
-    public static final Dot DOT2= new Dot(0.8f,0.7f);
-    public static final Dot DOT3= new Dot(0.5f,0.5f);
-    public static final Dot DOT4= new Dot(0.3f,0.2f);
-    public static final Dot DOT5= new Dot(0.7f,0.95f);
-    DotInfo dotInfo1 = new DotInfo(DOT1, 50);
-    DotInfo dotInfo2 = new DotInfo(DOT3, 100);
-    DotInfo dotInfo3 = new DotInfo(DOT5, 80);
-    DotInfo dotInfo4 = new DotInfo(DOT2, 60);
-    DotInfo dotInfo5 = new DotInfo(DOT4, 60);
-    DotInfo[] dotsInfo = {dotInfo1,dotInfo2};
-    DotInfo[] dotsInfo1 = {dotInfo1,dotInfo3,dotInfo4,dotInfo5};
+    public static final Dot DOT1= new Dot(0.2f,0.3f);
+    public static final Dot DOT2= new Dot(0.6f,0.3f);
+    public static final Dot DOT3= new Dot(0.4f,0.9f);
+
+    public static final Dot DOT4= new Dot(0.4f,0.3f);
+    public static final Dot DOT5= new Dot(0.8f,0.3f);
+    public static final Dot DOT6= new Dot(0.65f,0.9f);
+    DotInfo dotInfo1 = new DotInfo(DOT1, 200);
+    DotInfo dotInfo2 = new DotInfo(DOT2, 100);
+    DotInfo dotInfo3 = new DotInfo(DOT3, 100);
+
+    DotInfo dotInfo4 = new DotInfo(DOT4, 100);
+    DotInfo dotInfo5 = new DotInfo(DOT5, 100);
+    DotInfo dotInfo6 = new DotInfo(DOT6, 200);
+    DotInfo[] dotsInfo = {dotInfo1,dotInfo2,dotInfo3};
+    DotInfo[] dotsInfo1 = {dotInfo4,dotInfo5,dotInfo6};
 
     Foot mFootView;
     Foot lFootView;
@@ -63,6 +66,7 @@ public class MainActivity extends Activity implements OnClickListener{
         data.append(9,95);
         data.append(10,50);
         data.append(11,60);
+
 
         FootPrintLog.i(TAG, "updateBarChart");
         mStatics.clearChart();

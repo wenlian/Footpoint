@@ -174,10 +174,11 @@ public class Foot extends View {
         int xLocation = (int)(dotInfo.position.getX() * width);
         int yLocation = (int)(dotInfo.position.getY() * height);
         Log.d(TAG, "x:"+xLocation+";y:"+yLocation);
+
         int strokeWidthInDp = 1 +  (int)(dotInfo.pressure/10);
         float strokeWidthInPx = dp2Px(strokeWidthInDp);
-        mDotPaint.setStrokeWidth(strokeWidthInPx);
-        canvas.drawPoint(xLocation, yLocation, mDotPaint);
+        //mDotPaint.setStrokeWidth(strokeWidthInPx);
+        canvas.drawCircle(xLocation, yLocation,strokeWidthInPx, mDotPaint);
     }
 
     public void setDotsInfo(DotInfo[] dotInfo) {

@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.lia.animation"
-        minSdkVersion 12
-        targetSdkVersion 19
+        minSdkVersion 18
+        targetSdkVersion 21
     }
 
     buildTypes {
