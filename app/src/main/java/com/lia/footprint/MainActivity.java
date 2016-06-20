@@ -16,12 +16,28 @@ import com.lia.footprint.util.FootPrintLog;
 import com.lia.footprint.view.Foot;
 import com.lia.footprint.view.ValueLineChart;
 
+import com.lia.footprint.model.Dot;
+import com.lia.footprint.model.DotInfo;
+
 public class MainActivity extends Activity implements OnClickListener{
 
     private final String TAG = "Main_Activity";
     Context mContext;
 
     ValueLineChart mStatics = null;
+    public static final Dot DOT1= new Dot(0.1f,0.1f);
+    public static final Dot DOT2= new Dot(0.8f,0.7f);
+    public static final Dot DOT3= new Dot(0.5f,0.5f);
+    public static final Dot DOT4= new Dot(0.3f,0.2f);
+    public static final Dot DOT5= new Dot(0.7f,0.95f);
+    DotInfo dotInfo1 = new DotInfo(DOT1, 50);
+    DotInfo dotInfo2 = new DotInfo(DOT3, 100);
+    DotInfo dotInfo3 = new DotInfo(DOT5, 80);
+    DotInfo dotInfo4 = new DotInfo(DOT2, 60);
+    DotInfo dotInfo5 = new DotInfo(DOT4, 60);
+    DotInfo[] dotsInfo = {dotInfo1,dotInfo2};
+    DotInfo[] dotsInfo1 = {dotInfo1,dotInfo3,dotInfo4,dotInfo5};
+
     Foot mFootView;
     Foot lFootView;
     @Override
@@ -71,6 +87,10 @@ public class MainActivity extends Activity implements OnClickListener{
     private void initResources() {
         mFootView = (Foot) findViewById(R.id.foot);
         lFootView = (Foot) findViewById(R.id.foot1);
+        mFootView.setDotsInfo(dotsInfo);
+        lFootView.setDotsInfo(dotsInfo1);
+        //mFootView = new Foot(mContext,dotsInfo);
+        //lFootView = new Foot(mContext,dotsInfo1);;
         mStatics = (ValueLineChart) findViewById(R.id.valueLineChart);
         updateValueLineChart();
     }

@@ -18,7 +18,7 @@ import com.lia.footprint.model.DotInfo;
 public class Foot extends View {
 
     private final String TAG = "FootView";
-    private DotInfo [] dotsInfo = {};
+    private DotInfo [] dotsInfo;
 
     Drawable mFootBg = null;
     int mFootBgWidth = 0;
@@ -44,15 +44,13 @@ public class Foot extends View {
 
     public Foot(Context context) {
         this(context, null);
-        //dotsInfo = context.
     }
 
     public Foot(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public Foot(Context context, AttributeSet attrs,
-                       int defStyle) {
+    public Foot(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mContext = context;
         mFootBg = context.getResources().getDrawable(R.drawable.foot_bg);
@@ -60,7 +58,7 @@ public class Foot extends View {
         mFootBgWidth = mFootBg.getIntrinsicWidth();
         mFootBgHeight = mFootBg.getIntrinsicHeight();
 
-        Log.d(TAG, "mFootBgWidth:"+mFootBgWidth+";mFootBgHeight:"+mFootBgHeight);
+        Log.d(TAG, "mFootBgWidth:"+mFootBgWidth+";mFootBgHeight:" + mFootBgHeight);
         initDotPaint();
     }
 
