@@ -53,8 +53,8 @@
         app:egUseCubic="true"
         app:egUseOverlapFill="false"
         app:egCurveSmoothness="0.4"
-        app:egShowValueIndicator="false"
-        app:egUseDynamicScaling="false"
+        app:egShowValueIndicator="true"
+        app:egUseDynamicScaling="true"
         />
 
 </LinearLayout>
